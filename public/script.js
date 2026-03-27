@@ -23,7 +23,7 @@ async function sendMessage() {
   const loadingMsg = addMessage("<span class='typing'></span>", "ai");
 
   try {
-    const res = await fetch('/chat', {
+    const res = await fetch('https://ai-chatbot-s5k7.onrender.com/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message, history })
