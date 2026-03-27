@@ -4,6 +4,7 @@ const sendBtn = document.getElementById('sendBtn');
 
 let history = [];
 
+fetch("https://ai-chatbot-s5k7.onrender.com/health").catch(() => {});
 sendBtn.addEventListener('click', sendMessage);
 
 userInput.addEventListener('keypress', (e) => {
